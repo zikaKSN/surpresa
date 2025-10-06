@@ -1,0 +1,77 @@
+/* Fundo com coraçõezinhos animados */
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #ffd6e8, #ffe6f2);
+  overflow: hidden;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Container principal */
+.container {
+  text-align: center;
+  background: white;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(255, 150, 200, 0.4);
+  width: 90%;
+  max-width: 400px;
+  position: relative;
+  z-index: 2;
+}
+
+/* Texto */
+h1 {
+  color: #ff4d94;
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+
+/* Botões */
+button {
+  background-color: #ff80bf;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 25px;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: transform 0.2s ease, background-color 0.3s ease;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #ff66b3;
+  transform: scale(1.05);
+}
+
+/* Mensagem exibida */
+.mensagem {
+  font-size: 1.1rem;
+  color: #ff3385;
+  margin-bottom: 20px;
+  min-height: 40px;
+}
+
+/* Coraçõezinhos flutuantes */
+.heart {
+  position: fixed;
+  color: #ff80bf;
+  animation: flutuar 6s linear infinite;
+  opacity: 0.7;
+  font-size: 20px;
+}
+
+@keyframes flutuar {
+  0% {
+    transform: translateY(100vh) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-10vh) scale(0.6);
+    opacity: 0;
+  }
+}
